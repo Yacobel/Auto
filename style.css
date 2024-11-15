@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.car{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    width: 98vw; 
+    height: 45vw; 
+    position: relative;
+}
+
+
+
+.window{
+    background-color: red;
+    border: 1px solid white;
+
+    grid-area: 1/2;
+
+} 
+.window-1{
+    grid-area: 1/3;
+    background-color: red;
+    border: 1px solid white;
+
+}
+
+.pink{
+    grid-area: 2;
+    background-color: red;
+    border: 1px solid white;
+
+} 
+.pink-1{
+        background-color: red;
+    border: 1px solid white;
+
+    grid-area: 2;
+}
+.rose{
+    grid-area: 2;
+    background-color: red;
+    border: 1px solid white;
+
+
+}
+.rose-1{
+    grid-area: 2;
+    background-color: red;
+    border: 1px solid white;
+
+}
+.black{
+    grid-area: 2;
+    background-color: red ;
+    border: 1px solid white;
+
+}
+
+
+
+.wheels{
+    position: absolute;
+    bottom: -20%; 
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.wheel{
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 20vw; 
+    height: 20vw; 
+}
+.wheel-1{
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 20vw; 
+    height: 20vw; 
+}
+@media(max-width:600px){
+
+
+    .car{
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    }
+    .wheels{
+        bottom: 40%;
+    }
+    .wheel{
+        background-color: red;
+        border-radius: 50%;
+        border: 1px solid black;
+        width: 134px;
+        height: 134px;
+    }
+    .wheel-1{
+        background-color: red;
+        border-radius: 50%;
+        border: 1px solid black;
+        width: 134px;
+        height: 134px;
+    }
+    .window{
+        background-color: red;
+        border: 1px solid white;
+        grid-area: 1/1;
+
+    }
+    .window-1{
+        background-color: red;
+        border: 1px solid white;
+        grid-area: 1/2;
+    }
+    .rose{
+        grid-area: 3;
+    }
+    .black{
+        position: absolute;
+        background-color: red;
+        z-index: 1;
+        top: 329px;
+        height: 140px;
+        width: 141px;
+        left: 50%;
+        rotate: 45deg;
+        transform: translateX(-70%);
+    }
+}
